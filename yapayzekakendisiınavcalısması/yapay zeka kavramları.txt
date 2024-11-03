@@ -1,0 +1,80 @@
+
+yapay zeka kavramlari
+
+Yapay zeka (YZ), bilgisayar sistemlerinin insan benzeri düşünme, öğrenme ve problem çözme yeteneklerini taklit etmesini sağlayan bir alandır. Yapay zeka ile ilgili temel kavramlar şunlardır:
+
+
+1. Yapay Zeka (YZ)
+Tanım: Bilgisayarların veya makinelerin, insan zekasını taklit eden ve belirli görevleri yerine getirme yeteneğine sahip sistemler oluşturma bilimidir.
+Amaç: Otonom sistemler geliştirmek, karar verme süreçlerini otomatikleştirmek ve insan benzeri görevleri gerçekleştirmek.
+
+
+2. Makine Öğrenimi (ML)
+Tanım: Yapay zeka içinde yer alan bir alt alan olup, bilgisayar sistemlerinin deneyim yoluyla öğrenmesini sağlayan algoritmaların geliştirilmesidir.
+Uygulama: Veriden öğrenme ve tahmin yapma, sınıflandırma ve regresyon gibi görevleri yerine getirir.
+
+
+3. Derin Öğrenme (DL)
+Tanım: Makine öğreniminin bir alt kümesi olup, çok katmanlı yapay sinir ağları kullanarak verilerden öğrenir.
+Örnek: Görüntü tanıma, doğal dil işleme gibi karmaşık görevlerde yüksek başarı sağlar.
+
+
+4. Sinir Ağı
+Tanım: Derin öğrenme modellerinin temel yapı taşlarıdır. İnsan beynindeki nöronların çalışma biçimini taklit eden katmanlı yapılar içerir.
+Amaç: Veriyi işlemek ve öğrenme işlemini gerçekleştirmek.
+
+
+5. Doğal Dil İşleme (NLP)
+Tanım: Bilgisayarların insan dilini anlama, yorumlama ve yanıt verme yeteneğidir.
+Uygulama: Metin analizi, dil çevirisi, sohbet botları ve sesli asistanlar gibi alanlarda kullanılır.
+
+
+6. Görsel Tanıma
+Tanım: Bilgisayarların ve makinelerin görüntüleri analiz ederek tanımlama ve sınıflandırma yapma yeteneğidir.
+Uygulama: Yüz tanıma, nesne tanıma ve otonom araçlarda kullanılır.
+
+
+7. Veri Madenciliği
+Tanım: Büyük veri setlerinden anlamlı bilgi ve kalıplar çıkarma sürecidir.
+Amaç: Bilgi keşfi ve analiz yapmak için çeşitli istatistiksel ve makine öğrenimi tekniklerini kullanmak.
+
+
+8. Otonom Sistemler
+Tanım: İnsan müdahalesine ihtiyaç duymadan görevleri yerine getirebilen sistemlerdir.
+Örnek: Otonom araçlar, robotlar ve dronlar gibi.
+
+
+9. Yapay Genel Zeka (AGI)
+Tanım: İnsan zekasına benzer genel bir zeka seviyesine sahip yapay zeka sistemleridir. AGI, farklı görevleri bağımsız olarak gerçekleştirme yeteneğine sahiptir.
+Durum: AGI henüz geliştirilmemiştir ve araştırma aşamasındadır.
+
+
+10. Aykırı Değer Tespiti
+Tanım: Veri setlerinde normalden farklı veya beklenmedik verileri tanımlama sürecidir.
+Amaç: Hata tespiti, dolandırıcılık analizi ve anormalliklerin belirlenmesi için kullanılır.
+
+
+11. Kümeleme
+Tanım: Veri setindeki benzer nesneleri gruplama sürecidir.
+Amaç: Veriyi daha iyi anlamak ve analiz etmek için kullanılır; örneğin, müşteri segmentasyonu.
+
+
+12. Öğrenme Algoritmaları
+Tanım: Bilgisayarların veriden öğrenmesini sağlayan matematiksel yöntemlerdir.
+Örnekler: Karar ağaçları, rastgele ormanlar, destek vektör makineleri, k-en yakın komşu.
+
+
+13. Öznitelik Seçimi
+Tanım: Modelin performansını artırmak için en önemli verileri veya öznitelikleri belirleme sürecidir.
+Amaç: Veri setinin boyutunu azaltarak hesaplama süresini ve karmaşıklığı azaltmak.
+
+
+14. Eğitim ve Test Verileri
+Eğitim Verisi: Modelin öğrenmesi için kullanılan veri setidir.
+Test Verisi: Modelin genel performansını değerlendirmek için kullanılan veri setidir.
+Bu kavramlar, yapay zeka ve onun uygulamaları hakkında temel bir anlayış oluşturmanıza yardımcı olacaktır. Yapay zeka alanındaki araştırmalar ve uygulamalar hızla gelişmekte olduğundan, bu kavramları takip etmek önemlidir.
+
+
+
+
+

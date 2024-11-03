@@ -1,0 +1,58 @@
+
+veri ,veri türleri,veri kavramları,veri seti kavramaları,veri seti açıklamalar:
+
+Veri, bir nesne veya olgu hakkında bilgi sağlayan ham, işlenmemiş veya düzenlenmemiş bilgilerdir. Veri, sayısal veya sözel olarak temsil edilebilir ve analiz için kullanılır. Veri, çeşitli şekillerde organize edilebilir ve farklı türlerde olabilir. İşte veri ve ilgili kavramların detaylı bir açıklaması:
+
+1. Veri
+
+Tanım: Veri, gerçek dünya olaylarını, nesnelerini veya kavramlarını temsil eden bilgi birimleridir. Genellikle sayılar, metinler, görüntüler, sesler veya diğer formatlarda olabilir.
+Örnekler: Bir öğrencinin notları, hava durumu bilgileri, bir ürünün fiyatı gibi çeşitli bilgi türleri veri olarak kabul edilir.
+
+
+2. Veri Türleri
+
+Veri türleri, verinin temsil ettiği değerin türünü belirtir. Yaygın veri türleri şunlardır:
+
+Sayısal Veri: Tam sayılar (integer) veya ondalıklı sayılar (float) şeklinde olan veridir. Örneğin, bir öğrencinin yaşı veya bir ürünün fiyatı.
+
+Kategorik Veri: Belirli kategorilere ait olan veridir. İki alt türü vardır:
+
+Nominal Veri: Sıralama veya derecelendirme yapmadan, sadece farklı kategorileri gösterir. Örneğin, cinsiyet, şehir isimleri.
+Ordinal Veri: Sıralama veya derecelendirme yapabilen kategorik veridir. Örneğin, bir otelin müşteri memnuniyeti puanı (1-5 arası).
+Zaman Serisi Verisi: Zamanla değişen veridir. Örneğin, her ayın sonundaki hava durumu sıcaklıkları.
+
+Metin Verisi: Kelimeler veya cümleler içeren veridir. Örneğin, bir ürün açıklaması veya yorumları.
+
+
+3. Veri Kavramları
+
+Veri Seti: Belirli bir konu hakkında bir araya getirilen veri noktaları kümesidir. Veri seti, genellikle tablo şeklinde düzenlenir ve her bir satır bir gözlem veya örnek, her bir sütun ise bir değişkeni temsil eder.
+
+Veri Analizi: Veri setlerinden bilgi ve içgörüler elde etmek için yapılan işlemlerdir. Veri analizi, istatistiksel yöntemler, görselleştirme ve diğer analiz teknikleri kullanılarak gerçekleştirilir.
+
+Veri Madenciliği: Büyük veri setleri içinde gizli kalmış kalıpları ve ilişkileri keşfetmek için kullanılan teknikler ve algoritmalardır. Örneğin, müşteri davranışlarını analiz ederek satış stratejilerini belirlemek.
+
+
+4. Veri Seti Kavramları
+
+Gözlem: Veri setinde bulunan her bir satır, bir gözlemi temsil eder. Örneğin, bir öğrencinin bilgileri (isim, yaş, not) bir gözlem olarak kabul edilir.
+
+Değişken: Veri setinde bulunan her bir sütun, bir değişkeni temsil eder. Örneğin, yaş, cinsiyet, not gibi özellikler değişkenlerdir.
+
+Eksik Veri: Veri setinde bazı gözlemlerin eksik olduğu durumları ifade eder. Eksik veri, analiz sonuçlarını etkileyebilir ve bu nedenle dikkatlice işlenmelidir.
+
+Aykırı Değer: Diğer verilerden önemli ölçüde farklı olan verilerdir. Örneğin, bir öğrencinin notları arasında 100 olan bir öğrencinin 20 alması aykırı değer olarak kabul edilebilir.
+
+
+5. Veri Seti
+
+Tanım: Bir veya daha fazla değişken içeren, organize edilmiş bir veri koleksiyonudur. Veri setleri genellikle bir tablo, veri çerçevesi veya benzeri bir yapı içinde temsil edilir.
+Örnek: Bir okulda öğrenci bilgilerini içeren bir veri seti:
+İsim	Yaş	Cinsiyet	Not
+Alice	24	Kadın	85
+Bob	22	Erkek	90
+Charlie	23	Erkek	70
+David	26	Erkek	95
+
+Veri ve veri türleri, veri bilimi, istatistik, makine öğrenmesi ve benzeri alanlarda önemli bir rol oynar. Bu kavramları anlamak, veri analizi ve manipülasyonu sürecinde daha etkili olmanıza yardımcı olacaktır.
+

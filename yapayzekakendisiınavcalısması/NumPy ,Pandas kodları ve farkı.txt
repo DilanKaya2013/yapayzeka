@@ -1,0 +1,293 @@
+numpy kodları:
+
+import numpy as np  # NumPy kütüphanesini içe aktarma
+
+# 1. np.array() - Listeyi NumPy dizisine dönüştürme
+arr = np.array([1, 2, 3])
+print("Array:", arr)
+
+# 2. np.arange() - Belirli bir aralıktaki sayılardan dizi oluşturma
+arr_range = np.arange(0, 10, 2)
+print("Arange:", arr_range)
+
+# 3. np.zeros(), np.ones(), np.full() - Sıfır, bir veya sabit bir değerle dolu diziler oluşturma
+zeros_arr = np.zeros((3, 3))          # 3x3 sıfır matrisi
+ones_arr = np.ones((2, 2))             # 2x2 bir matrisi
+full_arr = np.full((2, 3), 5)          # 2x3 tüm elemanları 5 olan bir dizi
+print("Zeros:\n", zeros_arr)
+print("Ones:\n", ones_arr)
+print("Full:\n", full_arr)
+
+# 4. np.random.rand(), np.random.randint() - Rastgele sayılardan dizi oluşturma
+rand_arr = np.random.rand(3, 3)        # 0 ile 1 arasında rastgele sayılardan 3x3 matris
+rand_int_arr = np.random.randint(1, 10, (3, 3))  # 1 ile 10 arasında rastgele tam sayılardan 3x3 matris
+print("Random float array:\n", rand_arr)
+print("Random int array:\n", rand_int_arr)
+
+# 5. np.reshape() - Diziyi yeniden şekillendirme
+arr_reshape = np.arange(6).reshape((2, 3))
+print("Reshaped array:\n", arr_reshape)
+
+# 6. np.sum(), np.mean(), np.max(), np.min() - Toplam, ortalama, maksimum ve minimum hesaplamaları
+arr = np.array([1, 2, 3, 4, 5])
+print("Sum:", np.sum(arr))
+print("Mean:", np.mean(arr))
+print("Max:", np.max(arr))
+print("Min:", np.min(arr))
+
+# 7. np.dot() - Matris çarpımı
+arr1 = np.array([[1, 2], [3, 4]])
+arr2 = np.array([[5, 6], [7, 8]])
+dot_product = np.dot(arr1, arr2)
+print("Dot product:\n", dot_product)
+
+# 8. np.transpose() - Dizinin transpozunu alma
+transposed_arr = np.transpose(arr1)
+print("Transposed array:\n", transposed_arr)
+
+# 9. np.where() - Koşullu eleman seçimi
+arr = np.array([1, 2, 3, 4, 5])
+where_result = np.where(arr > 3, arr, -1)
+print("Where result:", where_result)
+
+# 10. np.unique() - Tekrarsız elemanları bulma
+arr = np.array([1, 2, 2, 3, 4, 4])
+unique_elements = np.unique(arr)
+print("Unique elements:", unique_elements)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+pandas kodları:
+
+import pandas as pd  # Pandas kütüphanesini içe aktarma
+
+# 1. Veri Çerçevesi (DataFrame) Oluşturma
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Age': [24, 27, 22, 32],
+    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']
+}
+df = pd.DataFrame(data)
+print("DataFrame:\n", df)
+
+# 2. CSV Dosyasından Veri Okuma
+df_csv = pd.read_csv('file.csv')  # 'file.csv' yerine dosya adı yazılmalı
+print("CSV'den okunan DataFrame:\n", df_csv)
+
+# 3. Excel Dosyasından Veri Okuma
+df_excel = pd.read_excel('file.xlsx', sheet_name='Sheet1')  # 'file.xlsx' yerine dosya adı yazılmalı
+print("Excel'den okunan DataFrame:\n", df_excel)
+
+# 4. Veri Çerçevesine Yeni Sütun Ekleme
+df['Salary'] = [50000, 60000, 52000, 58000]
+print("Yeni sütun eklenmiş DataFrame:\n", df)
+
+# 5. Satır ve Sütunlara Erişim (`loc` ve `iloc` ile)
+print("İkinci satır:\n", df.loc[1])  # Satır etiketi ile erişim
+print("İlk iki satır:\n", df.iloc[:2])  # Satır indeksine göre erişim
+print("Name ve Age sütunları:\n", df[['Name', 'Age']])
+
+# 6. Veriyi Filtreleme
+filtered_df = df[df['Age'] > 25]  # Yaşı 25'ten büyük olan satırları filtreleme
+print("Yaşı 25'ten büyük olanlar:\n", filtered_df)
+
+# 7. Veri Gruplama ve Toplama (`groupby`)
+grouped = df.groupby('City')['Salary'].mean()  # Şehir bazında maaş ortalamalarını hesaplama
+print("Şehir bazında ortalama maaş:\n", grouped)
+
+# 8. Eksik Verileri İşleme (`isnull`, `dropna`, `fillna`)
+df_missing = df.copy()
+df_missing.loc[2, 'Salary'] = None  # Eksik veri ekleyelim
+print("Eksik veri olan DataFrame:\n", df_missing)
+print("Eksik veri kontrolü:\n", df_missing.isnull())
+df_dropped = df_missing.dropna()  # Eksik verileri içeren satırları silme
+print("Eksik veriler silinmiş DataFrame:\n", df_dropped)
+df_filled = df_missing.fillna(0)  # Eksik verileri 0 ile doldurma
+print("Eksik veriler doldurulmuş DataFrame:\n", df_filled)
+
+# 9. Veri Çerçevesini Sıralama
+df_sorted = df.sort_values(by='Age', ascending=False)  # Yaşa göre azalan sıralama
+print("Yaşa göre sıralanmış DataFrame:\n", df_sorted)
+
+# 10. Temel İstatistiksel Bilgiler
+print("Temel İstatistik Bilgiler:\n", df.describe())  # Sayısal sütunlar için istatistikler
+
+# 11. Pivot Table Oluşturma
+pivot_table = df.pivot_table(values='Salary', index='City', columns='Age', aggfunc='mean')
+print("Pivot Table:\n", pivot_table)
+
+# 12. CSV Dosyasına Veri Yazma
+df.to_csv('output.csv', index=False)  # DataFrame'i 'output.csv' dosyasına kaydeder
+
+# 13. Veri Çerçevesindeki Sütunları Yeniden Adlandırma
+df_renamed = df.rename(columns={'Name': 'Employee Name', 'Age': 'Employee Age'})
+print("Yeniden adlandırılmış DataFrame:\n", df_renamed)
+
+# 14. Birleştirme (Merge) - İki DataFrame’i birleştirme
+data2 = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'Eve'],
+    'Department': ['HR', 'Finance', 'IT', 'Marketing']
+}
+df2 = pd.DataFrame(data2)
+merged_df = pd.merge(df, df2, on='Name', how='inner')  # 'Name' sütununa göre birleştirme
+print("Birleştirilmiş DataFrame:\n", merged_df)
+
+
+
+
+
+
+
+
+
+
+
+pandas numpy farkı:
+
+NumPy: Sayısal ve bilimsel işlemler için hızlı, homojen veri kümeleriyle çalışır.
+
+Pandas: Veri analizi, tablo yapısındaki verilerle çalışmak ve veriyi temizlemek için esnek ve kullanımı kolaydır.
+
+Bu kütüphaneler birbirini tamamlayıcı olarak kullanılabilir. Örneğin, Pandas veri analizi için kullanılırken, bazı sayısal işlemler için NumPy işlevleri kullanılabilir.
+ 
+
+
+
+
+
+
+
+
+
+
+NumPy ile İlgili Sorular:
+
+Dizi Oluşturma ve Temel İşlemler
+
+Soru: 1 ile 10 arasındaki sayılardan oluşan bir NumPy dizisi oluşturun ve dizinin toplamını, ortalamasını, maksimum ve minimum değerini hesaplayın.
+
+Cevap:
+python
+Kodu kopyala
+import numpy as np
+arr = np.arange(1, 11)
+total = np.sum(arr)
+mean = np.mean(arr)
+max_val = np.max(arr)
+min_val = np.min(arr)
+print("Toplam:", total)
+print("Ortalama:", mean)
+print("Maksimum:", max_val)
+print("Minimum:", min_val)
+Matris Çarpımı
+
+
+
+Soru 3: İki matrisin çarpımını hesaplayın.
+
+Cevap:
+python
+Kodu kopyala
+arr1 = np.array([[1, 2], [3, 4]])
+arr2 = np.array([[5, 6], [7, 8]])
+result = np.dot(arr1, arr2)
+print("Matris çarpımı:\n", result)
+Dizinin Transpozu
+
+
+
+Soru 4: Bir dizinin transpozunu alın.
+
+Cevap:
+python
+Kodu kopyala
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+transposed_arr = np.transpose(arr)
+print("Transpoze:\n", transposed_arr)
+Pandas ile İlgili Sorular
+DataFrame Oluşturma
+
+
+
+Soru 5: Bir DataFrame oluşturun ve "Yaş" ve "Şehir" sütunlarını seçin.
+
+Cevap:
+python
+Kodu kopyala
+import pandas as pd
+data = {'İsim': ['Alice', 'Bob', 'Charlie'], 'Yaş': [24, 27, 22], 'Şehir': ['İstanbul', 'Ankara', 'İzmir']}
+df = pd.DataFrame(data)
+age_city = df[['Yaş', 'Şehir']]
+print("Yaş ve Şehir:\n", age_city)
+Veri Filtreleme
+
+
+
+Soru 6: Yaşı 25'ten büyük olan kişileri filtreleyin.
+
+Cevap:
+python
+Kodu kopyala
+filtered_df = df[df['Yaş'] > 25]
+print("Yaşı 25'ten büyük olanlar:\n", filtered_df)
+Eksik Verilerle Çalışma
+
+
+
+Soru 7: Bir DataFrame'deki eksik verileri kontrol edin ve eksik olanları silin.
+
+Cevap:
+python
+Kodu kopyala
+df_missing = df.copy()
+df_missing.loc[1, 'Yaş'] = None  # Eksik veri ekleme
+print("Eksik veri kontrolü:\n", df_missing.isnull())
+df_dropped = df_missing.dropna()
+print("Eksik veriler silinmiş:\n", df_dropped)
+Gruplama ve Toplama
+
+
+
+Soru 8: Şehirlere göre kişilerin yaş ortalamasını hesaplayın.
+
+Cevap:
+python
+Kodu kopyala
+grouped = df.groupby('Şehir')['Yaş'].mean()
+print("Şehir bazında yaş ortalaması:\n", grouped)
+
+
+
+Genel İpuçları:
+
+Temel Kavramları Anlayın: NumPy ve Pandas’ta kullanılan temel kavramları (array, DataFrame, indeksleme, slicing vb.) iyi kavrayın.
+
+Örnekler Üzerinden Çalışın: Belirli senaryolar üzerinde çalışarak pratik yapın; bu, sınavda karşılaşabileceğiniz sorunları daha iyi anlamanıza yardımcı olur.
+
+Kod Yazma Uygulaması: Kendi başınıza örnek veri kümesi oluşturarak, temel işlemleri gerçekleştirin. Bu, kütüphaneleri daha iyi anlamanızı sağlar.
+
+Bu tür sorular, genellikle hem teorik bilgi hem de pratik uygulama gerektirdiğinden, bu konular üzerinde çalışmak sınavda başarılı olmanıza yardımcı olacaktır.
+
+
+
+

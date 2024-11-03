@@ -1,0 +1,77 @@
+
+sınavda numpy pandas veri veri seti vb. nasıl cıkar
+
+Sınavda NumPy, Pandas ve veri setleri ile ilgili çıkabilecek sorular genellikle pratik uygulamalara dayalıdır. Bu tür konularda sıkça karşılaşılabilecek bazı soru türleri ve bu sorulara yönelik olası yanıtlar aşağıda verilmiştir:
+
+
+1. NumPy ile İlgili Sorular
+
+Örnek Soru 1: Dizi Oluşturma
+Soru 1: 0 ile 20 arasında olan çift sayılardan oluşan bir NumPy dizisi oluşturun.
+
+Cevap:
+python
+Kodu kopyala
+import numpy as np
+arr = np.arange(0, 21, 2)
+print(arr)
+
+
+Örnek Soru 2: Matris Çarpımı
+Soru2: İki 2x2 matrisin çarpımını hesaplayın.
+
+Cevap:
+A = np.array([[1, 2], [3, 4]])
+B = np.array([[5, 6], [7, 8]])
+C = np.dot(A, B)
+print(C)
+
+
+2. Pandas ile İlgili Sorular
+
+Örnek Soru 1: DataFrame Oluşturma
+Soru 1: Aşağıdaki verileri kullanarak bir Pandas DataFrame oluşturun ve ilk 3 satırı yazdırın:
+
+İsim: ["Alice", "Bob", "Charlie", "David"]
+Yaş: [24, 27, 22, 26]
+
+
+Cevap:
+import pandas as pd
+
+data = {'İsim': ["Alice", "Bob", "Charlie", "David"],
+        'Yaş': [24, 27, 22, 26]}
+df = pd.DataFrame(data)
+print(df.head(3))  # İlk 3 satırı yazdır
+
+
+Örnek Soru 2: Veri Filtreleme
+Soru 2: Yaşı 25 ve üzeri olan kişileri filtreleyin.
+
+Cevap:
+filtered_df = df[df['Yaş'] >= 25]
+print(filtered_df)
+
+
+3. Veri ve Veri Seti ile İlgili Sorular
+
+Örnek Soru 1: Veri Seti Tanımlama
+Soru: Aşağıdaki veri kümesini tanımlayın ve veri setinin gözlem ve değişken sayısını belirtin.
+
+İsim	Yaş	Şehir
+Alice	24	İstanbul
+Bob	27	Ankara
+Charlie	22	İzmir
+
+Cevap: Bu veri seti 3 gözlem (satır) ve 3 değişken (sütun) içermektedir. Gözlemler; Alice, Bob ve Charlie'dir; değişkenler ise İsim, Yaş ve Şehir'dir.
+
+
+Örnek Soru 2: Aykırı Değer Tespiti
+Soru: Aşağıdaki yaş değerleri için (24, 27, 22, 60) aykırı değeri belirleyin.
+
+Cevap: 60 değeri, diğer yaş değerlerinden (24, 27, 22) önemli ölçüde daha yüksektir ve bu nedenle aykırı değer olarak kabul edilebilir.
+
+
+
+
+
