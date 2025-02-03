@@ -1,0 +1,9 @@
+Yapılacaklar
+1. Kütüphane eklenecek (pandas)
+2. Veri setini ekle
+3. veri setinin kaç satır ve sütundan oluştuğuna bakalım
+4. veri setinin toplam kaç veriden oluştuğuna bakalım (21742 x 58)
+5. veri setini inceleyelim (kaç sütun var, veri türleri neler)
+6. veri setrindeki özniteliklere ait toplam veri sayısı, verilerin ortalaması minimum değerleri gibi bilgilerini inceleyelim
+7. veri setinde her bir sütunda toplam kaç adet boş değer var bakalım
+8. boş değer sayısı fazla olan sütunları veri setinden kaldıralım.
